@@ -1,0 +1,82 @@
+
+
+.background
+{
+	-fx-background-color: rgb(240,240,240);	
+	
+	
+
+}
+
+.etiquetas
+{
+	-fx-font-family: 'Lucida Sans';
+	-fx-font-weoght: Bold;
+	-fx-font-size: 18;
+}
+
+.boton
+{
+	/*-fx-background-color: #527aa3;*/
+	/*-fx-background-color:#38002a;*/
+	-fx-background-color: #62abf4; 
+	-fx-text-fill: white;
+	-fx-border-color: rgb(250,250,250);
+	-fx-background-radius: 6;
+	-fx-border-radius: 6;
+	-fx-font-family: 'Lucida Sans';
+	-fx-font-size: 14;
+	-fx-background-color: rgba(25,28,30,1);
+	
+}
+
+.boton:hover
+{
+	/*-fx-background-color: #83bcf7;*/
+	-fx-background-color: rgba(45,48,50,1);
+	
+}
+
+.cajaTexto
+{
+	-fx-font-family: 'Leelawadee';
+	-fx-font-size: 16;
+	-fx-border-style: none;
+	-fx-border-color: #83bcf7;
+	-fx-border-color: black;
+	-fx-border-radius: 4;
+}
+
+.cajaTexto:hover
+{
+	-fx-background-color: rgb(240,240,240);
+	
+}
+
+
+
+.hotel
+{
+	/*		*/
+	-fx-text-fill: white;
+	-fx-font-family: 'Harlow Solid Italic';	
+	-fx-font-size: 35;
+}
+
+
+.figura
+{
+	-fx-background-radius: 4;
+	-fx-background-color: #62abf4;   /* #38002a;*/	
+	-fx-border-color: white;
+	-fx-background-color: rgba(25,28,30,1);
+}
+
+
+#separador *.line
+{
+	
+	-fx-border-style: solid;
+    -fx-border-width: 0 0 1 0; /* its make really one-pixel-border */
+    -fx-border-color: black;
+}

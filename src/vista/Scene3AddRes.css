@@ -1,0 +1,67 @@
+.vbox-cen-hbox-titulo
+{
+	
+	-fx-background-color: linear-gradient(#0098FF, #A2D2FF);
+	-fx-background-radius: 20;
+	-fx-border-radius:20;
+	-fx-effect: dropShadow(three-pass-box, rgba(0,0,0,.35), 10.0, 0.0, 0.0, 10.0);
+	-fx-border-color: white;
+}
+
+
+.boton
+{
+	-fx-background-radius: 10;
+	-fx-border-radius: 10;
+	
+	-fx-background-color: linear-gradient(#0098FF, #A2D2FF);
+	-fx-text-fill: white;
+
+}
+
+.boton:hover
+{
+	-fx-background-color: linear-gradient(#087DCD, #81C2FF);
+}
+
+
+.main
+{
+	
+
+	-fx-background-color: rgb(240,240,240);	
+	/*-fx-background-color: linear-gradient(#FBE0C4, #FFEDDA);*/
+	-fx-border-color: white;
+	-fx-effect: dropShadow(three-pass-box, rgba(0,0,0,.35), 10.0, 0.0, 0.0, 10.0);
+		
+}
+
+.text-field
+{
+	/*-fx-background-color: linear-gradient(#FBE0C4, #F9CF93);*/
+	-fx-background-radius: 4;
+	-fx-border-radius: 4;
+	-fx-prompt-text-fill: black;
+	-fx-text-fill: black;
+}
+
+.combo-box {
+	-fx-font-family: 'Cambria';
+	-fx-font-size: 14;
+	-fx-border-style: none;
+	/*-fx-background-color: linear-gradient(#CAE3FA, #B8D6F3);*/
+	-fx-background-radius: 4;
+	-fx-border-radius: 4;
+	-fx-font-weight:  bold ;
+}
+
+	.combo-box .list-cell {
+		-fx-background-insets: 2.0;
+		-fx-background-radius: 3.0;
+		-fx-background-color: transparent;
+		-fx-text-fill: black;
+	}
+
+	.combo-box .list-view .list-cell {
+		-fx-text-fill: #e07575;
+	}

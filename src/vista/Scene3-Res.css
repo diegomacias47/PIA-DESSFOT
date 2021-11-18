@@ -1,0 +1,33 @@
+.main
+{
+	
+	-fx-background-color: rgb(240,240,240);	
+	-fx-border-color: white;
+	-fx-effect: dropShadow(three-pass-box, rgba(0,0,0,.35), 10.0, 0.0, 0.0, 10.0);
+		
+}
+
+.boton
+{
+	-fx-background-radius: 10;
+	-fx-border-radius: 10;
+	
+	-fx-background-color: linear-gradient(#0098FF, #A2D2FF);
+	-fx-text-fill: white;
+
+}
+
+
+.vbox-cen-hbox-titulo
+{
+	
+	-fx-background-color: linear-gradient(#0098FF, #A2D2FF);
+	-fx-background-radius: 20;
+	-fx-border-radius:20;
+	-fx-effect: dropShadow(three-pass-box, rgba(0,0,0,.35), 10.0, 0.0, 0.0, 10.0);
+	-fx-border-color: white;
+}
+
+.panel{
+	-fx-border-color: linear-gradient(#0098FF, #A2D2FF);
+}

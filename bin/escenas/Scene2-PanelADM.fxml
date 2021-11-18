@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="anchorPanePrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1024.0" stylesheets="@Scene2(1).css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="escenas.ControllerScene2copy">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="200.0" prefWidth="290.0" styleClass="vbox-izquierda" stylesheets="@Scene2(1).css" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="103.0" prefWidth="200.0" stylesheets="@Scene2(1).css">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="GEAR" size="30.0">
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label text="Panel de control" textFill="WHITE" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="15.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="seccion-Titulo" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" onMousePressed="#mostrarSeccionPrincipal" prefHeight="70.0" prefWidth="200.0" styleClass="hbox-Menu">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <FontAwesomeIconView fill="#da4b4b" glyphName="PAPERCLIP" size="30">
+                           <HBox.margin>
+                              <Insets left="23.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label text="Menu principal" textFill="#e07575">
+                           <HBox.margin>
+                              <Insets left="24.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" onMousePressed="#mostrarSeccionEmpleados" prefHeight="70.0" prefWidth="200.0" styleClass="hbox-Menu">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <FontAwesomeIconView fill="#da4b4b" glyphName="USERS" size="30">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label text="Empleados" textFill="#e07575">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="200.0" styleClass="hbox-Menu">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <FontAwesomeIconView fill="#da4b4b" glyphName="DOLLAR" size="30.0">
+                           <HBox.margin>
+                              <Insets left="26.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label text="Facturas" textFill="#e07575">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="200.0" styleClass="hbox-Menu">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <FontAwesomeIconView fill="#da4b4b" glyphName="CREDIT_CARD_ALT" size="28.0" wrappingWidth="36.0">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label prefHeight="23.0" prefWidth="115.0" text="Reservaciones" textFill="#e07575">
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" onMousePressed="#cerrarSesion" prefHeight="70.0" prefWidth="200.0" styleClass="hbox-Menu">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <FontAwesomeIconView fill="#da4b4b" glyphName="ARROW_CIRCLE_ALT_LEFT" size="30">
+                           <HBox.margin>
+                              <Insets left="22.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label text="Cerrar sesion" textFill="#e07575">
+                           <HBox.margin>
+                              <Insets left="28.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="802.0" prefWidth="736.0" styleClass="vbox-centro" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="103.0" prefWidth="684.0">
+                     <VBox.margin>
+                        <Insets left="25.0" right="25.0" top="15.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="seccion-Titulo" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                     <children>
+                        <Label fx:id="labelPrincipal" alignment="CENTER" contentDisplay="CENTER" text="Menu Principal" textFill="WHITE" />
+                     </children>
+                  </HBox>
+                  <AnchorPane fx:id="apPrincipal" prefHeight="565.0" prefWidth="734.0">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <TabPane fx:id="paneEmpleados" layoutY="7.0" prefHeight="557.0" prefWidth="734.0" styleClass="seccion-Tab" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Formulario de empleados">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="19.0" layoutY="20.0" text="Matricula del empleado:" />
+                                          <Label layoutX="19.0" layoutY="90.0" text="Nombre del empleado:" />
+                                          <Label layoutX="251.0" layoutY="90.0" text="Edad del empleado:" />
+                                          <Label layoutX="466.0" layoutY="90.0" text="Sexo del empleado:" />
+                                          <Label layoutX="19.0" layoutY="160.0" text="Domicilio del empleado:" />
+                                          <Label layoutX="251.0" layoutY="160.0" text="Telefono del empleado:" />
+                                          <ComboBox fx:id="cbPuesto" layoutX="466.0" layoutY="180.0" prefHeight="32.0" prefWidth="214.0" promptText="Selecciona el puesto" />
+                                          <Label layoutX="466.0" layoutY="160.0" text="Puesto del empleado:" />
+                                          <TextField fx:id="fMatricula" layoutX="19.0" layoutY="40.0" promptText="Escribe la matricula..." />
+                                          <TextField fx:id="fNombre" layoutX="19.0" layoutY="110.0" prefHeight="32.0" prefWidth="203.0" promptText="Escribe el nombre..." />
+                                          <TextField fx:id="fEdad" layoutX="250.0" layoutY="115.0" prefHeight="35.0" prefWidth="152.0" promptText="Escribe la edad..." />
+                                          <TextField fx:id="fDomicilio" layoutX="19.0" layoutY="180.0" promptText="Escribe lel domicilio..." />
+                                          <TextField fx:id="fTelefono" layoutX="252.0" layoutY="180.0" prefHeight="35.0" prefWidth="184.0" promptText="Escribe el telefono..." />
+                                          <RadioButton fx:id="rbSexo1" layoutX="466.0" layoutY="119.0" mnemonicParsing="false" text="Masculino" textFill="#e07575">
+                                             <toggleGroup>
+                                                <ToggleGroup fx:id="sexo1" />
+                                             </toggleGroup></RadioButton>
+                                          <RadioButton fx:id="rbSexo2" layoutX="590.0" layoutY="119.0" mnemonicParsing="false" text="Femenino" textFill="#e07575" toggleGroup="$sexo1" />
+                                          <FontAwesomeIconView fill="#da4b4b" glyphName="INFO_CIRCLE" layoutX="688.0" layoutY="204.0" size="20" />
+                                          <Button fx:id="btnDarAlta" layoutX="19.0" layoutY="258.0" mnemonicParsing="false" onAction="#obtenerDatos" text="Dar de alta" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="Tabla de empleados">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TableView fx:id="tableVista" layoutX="12.0" layoutY="146.0" prefHeight="294.0" prefWidth="710.0">
+                                            <columns>
+                                              <TableColumn fx:id="tableMatricula" prefWidth="86.0" text="Matricula" />
+                                              <TableColumn fx:id="tableNombre" prefWidth="226.0" text="Nombre" />
+                                                <TableColumn fx:id="tableEdad" minWidth="0.0" prefWidth="70.0" text="Edad" />
+                                                <TableColumn fx:id="tableSexo" prefWidth="115.0" text="Sexo" />
+                                                <TableColumn fx:id="tableTelefono" prefWidth="144.0" text="Telefono" />
+                                                <TableColumn fx:id="tablePuesto" prefWidth="68.0" text="Puesto" />
+                                            </columns>
+                                          </TableView>
+                                          <TextField fx:id="fBuscador" layoutX="12.0" layoutY="60.0" prefHeight="35.0" prefWidth="254.0" promptText="Buscar por matricula o nombre..." />
+                                          <Label layoutX="14.0" layoutY="39.0" text="¿Matricula o Nombre del empleado?" />
+                                       </children></AnchorPane>
+                              </content>
+                            </Tab>
+                              <Tab text="Modificar datos">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="19.0" layoutY="70.0" text="Matricula del empleado:" />
+                                          <TextField fx:id="fMatriculaMod" editable="false" layoutX="19.0" layoutY="90.0" promptText="Matricula..." />
+                                          <Label layoutX="19.0" layoutY="140.0" text="Nombre del empleado:" />
+                                          <TextField fx:id="fNombreMod" editable="false" layoutX="19.0" layoutY="160.0" promptText="Nombre..." />
+                                          <TextField fx:id="fEdadMod" editable="false" layoutX="254.0" layoutY="160.0" prefHeight="35.0" prefWidth="152.0" promptText="Edad..." />
+                                          <TextField fx:id="fDomicilioMod" editable="false" layoutX="19.0" layoutY="231.0" promptText="Domicilio..." />
+                                          <TextField fx:id="fTelefonoMod" editable="false" layoutX="254.0" layoutY="231.0" promptText="Telefono..." />
+                                          <Label layoutX="254.0" layoutY="140.0" text="Edad del empleado:" />
+                                          <Label layoutX="486.0" layoutY="140.0" prefHeight="20.0" prefWidth="157.0" text="Sexo del empleado:" />
+                                          <RadioButton fx:id="rbSexo1Mod" layoutX="486.0" layoutY="169.0" mnemonicParsing="false" text="Masculino" textFill="#e07575">
+                                             <toggleGroup>
+                                                <ToggleGroup fx:id="sexo2" />
+                                             </toggleGroup>
+                                          </RadioButton>
+                                          <RadioButton fx:id="rbSexo2Mod" layoutX="610.0" layoutY="169.0" mnemonicParsing="false" text="Femenino" textFill="#e07575" toggleGroup="$sexo2" />
+                                          <Label layoutX="19.0" layoutY="210.0" text="Domicilio del empleado:" />
+                                          <Label layoutX="254.0" layoutY="212.0" text="Telefono del empleado:" />
+                                          <Label layoutX="19.0" layoutY="24.0" text="¿Matricula del empleado a modificar?" />
+                                          <TextField fx:id="fMatriculaBuscador" layoutX="330.0" layoutY="17.0" prefHeight="35.0" prefWidth="176.0" promptText="Escribe la matricula..." />
+                                          <Separator id="separador" layoutX="14.0" layoutY="62.0" prefHeight="2.0" prefWidth="695.0" />
+                                          <Button fx:id="mostrarDatos" layoutX="515.0" layoutY="17.0" mnemonicParsing="false" onAction="#mostrarDatosDelEmpleado" text="Traer datos" />
+                                          <Button fx:id="btnActualizarDatos" layoutX="19.0" layoutY="306.0" mnemonicParsing="false" onAction="#actualizarDatos" text="Actualizar registro" />
+                                          <ComboBox fx:id="cbPuestoMod" layoutX="486.0" layoutY="231.0" prefHeight="35.0" prefWidth="169.0" promptText="Puesto..." />
+                                          <Label layoutX="486.0" layoutY="212.0" text="Puesto del empleado:" />
+                                          <FontAwesomeIconView fill="#e07575" glyphName="INFO_CIRCLE" layoutX="664.0" layoutY="254.0" size="20" />
+                                          <Button fx:id="cancelarDatos" layoutX="515.0" layoutY="17.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="35.0" prefWidth="127.0" text="Cancelar" visible="false" />
+                                          <Button fx:id="btnBorrarRegistro" layoutX="228.0" layoutY="306.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="188.0" text="Borrar registro" />
+                                       </children></AnchorPane>
+                                </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                        <Pane fx:id="panePrincipal" layoutY="7.0" prefHeight="557.0" prefWidth="734.0" styleClass="seccion-Pane" visible="false">
+                           <children>
+                              <Label layoutX="257.0" layoutY="31.0" text="Buenos dias a todos ustedes" />
+                           </children></Pane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+   <styleClass>
+      <String fx:value="shadow" />
+      <String fx:value="main" />
+   </styleClass>
+</AnchorPane>

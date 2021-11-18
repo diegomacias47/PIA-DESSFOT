@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="padre" prefHeight="520.0" prefWidth="463.0" stylesheets="@Estilos.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControllerHModificar">
+   <children>
+      <VBox layoutX="164.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="55.0" prefWidth="463.0" styleClass="color-paneles">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#cerrarVentana" prefHeight="38.0" prefWidth="52.0" styleClass="FXML-E-Agregar-Boton-2" text="X">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.6666666666666666">
+                           <stops>
+                              <Stop color="WHITE" />
+                              <Stop color="BLACK" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font name="Roboto Bold Italic" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <Pane prefHeight="380.0" prefWidth="441.0" styleClass="adm-item-vbox">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <children>
+                  <TextField fx:id="precio" focusTraversable="false" layoutX="20.0" layoutY="240.0" prefHeight="36.0" prefWidth="155.0" promptText="Precio..." styleClass="FXML-E-Agregar-TextField" />
+                  <Label layoutX="170.0" layoutY="130.0" styleClass="adm-item-label" text="Capacidad:">
+                     <font>
+                        <Font name="Roboto Bold Italic" size="20.0" />
+                     </font></Label>
+                  <Label layoutX="20.0" layoutY="210.0" styleClass="adm-item-label" text="Precio por noche:">
+                     <font>
+                        <Font name="Roboto Bold Italic" size="20.0" />
+                     </font></Label>
+                  <Label layoutX="20.0" layoutY="290.0" styleClass="adm-item-label" text="Estado:">
+                     <font>
+                        <Font name="Roboto Bold Italic" size="20.0" />
+                     </font></Label>
+                  <FontAwesomeIconView glyphName="HOTEL" layoutX="313.0" layoutY="119.0" size="100" text="">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.2666666666666666">
+                           <stops>
+                              <Stop color="#0b0d0d" />
+                              <Stop color="#463d40" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill></FontAwesomeIconView>
+                  <TextField fx:id="camas" layoutX="20.0" layoutY="160.0" prefHeight="36.0" prefWidth="106.0" promptText="Camas..." styleClass="FXML-E-Agregar-TextField" />
+                  <Label layoutX="20.0" layoutY="130.0" styleClass="adm-item-label" text="Camas:">
+                     <font>
+                        <Font name="Roboto Bold Italic" size="20.0" />
+                     </font></Label>
+                  <TextField fx:id="matricula" layoutX="150.0" layoutY="25.0" promptText="Matricula..." styleClass="adm-item-textfield-dos" visible="false" />
+                  <Label layoutX="150.0" layoutY="10.0" styleClass="adm-item-label" text="Matricula del empleado:" visible="false">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.6666666666666666">
+                           <stops>
+                              <Stop color="WHITE" />
+                              <Stop color="BLACK" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font name="Roboto Bold Italic" size="20.0" />
+                     </font></Label>
+                  <TextField fx:id="capacidad" layoutX="170.0" layoutY="160.0" prefHeight="34.0" prefWidth="106.0" promptText="Capacidad..." styleClass="FXML-E-Agregar-TextField" />
+                  <Label layoutX="20.0" layoutY="50.0" styleClass="adm-item-label" text="ID de habitacion:">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="20.0" />
+                     </font></Label>
+                  <ComboBox fx:id="modelo" layoutX="210.0" layoutY="320.0" prefHeight="34.0" prefWidth="165.0" promptText="Modelo..." styleClass="FXML-E-Agregar-Combobox" />
+                  <ComboBox fx:id="estado" layoutX="20.0" layoutY="320.0" prefHeight="17.0" prefWidth="150.0" promptText="Puesto..." styleClass="FXML-E-Agregar-Combobox" />
+                  <Label layoutX="20.0" layoutY="4.0" prefHeight="36.0" prefWidth="304.0" styleClass="adm-item-label" text="Datos de la habitacion...">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="28.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="9.0" layoutY="39.0" prefHeight="2.0" prefWidth="304.0" />
+                  <Label layoutX="19.0" layoutY="71.0" prefHeight="34.0" prefWidth="165.0" style="-fx-border-color: black; -fx-border-width: 0 0 1 0;" styleClass="adm-item-label" text="ID de habitacion:">
+                     <font>
+                        <Font name="Cambria Italic" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="210.0" layoutY="290.0" styleClass="adm-item-label" text="Modelo:">
+                     <font>
+                        <Font name="Roboto Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Separator prefHeight="0.0" prefWidth="441.0">
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" />
+               </VBox.margin>
+            </Separator>
+            <Pane prefHeight="66.0" prefWidth="461.0">
+               <children>
+                  <Button layoutX="20.0" layoutY="14.0" mnemonicParsing="false" onAction="#modificarDatos" prefHeight="38.0" prefWidth="165.0" styleClass="FXML-E-Agregar-Boton-1" text="Modificar datos">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.6952380952380953">
+                           <stops>
+                              <Stop color="WHITE" />
+                              <Stop color="BLACK" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font name="Roboto Bold Italic" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+   <styleClass>
+      <String fx:value="color-background" />
+      <String fx:value="main" />
+      <String fx:value="shadow" />
+   </styleClass>
+</AnchorPane>

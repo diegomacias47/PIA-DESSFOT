@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="padre" prefHeight="680.0" prefWidth="1158.0" stylesheets="@Secundario.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControllerFXML2">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="100.0" prefWidth="1158.0" styleClass="color-medio" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" layoutX="256.0" layoutY="47.0" prefHeight="60.0" prefWidth="900.0" AnchorPane.leftAnchor="258.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="47.0">
+                     <children>
+                        <Button fx:id="btnPrimero" mnemonicParsing="false" prefHeight="50.0" prefWidth="271.0" styleClass="buttonAmdSup" text="Button" visible="false">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <graphic>
+                              <OctIconView fill="#138d23" glyphName="PLUS" size="20" />
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="271.0" styleClass="buttonAmdSup" text="Button" visible="false" />
+                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="271.0" styleClass="buttonAmdSup" text="Button" visible="false" />
+                     </children></HBox>
+                  <Pane prefHeight="48.0" prefWidth="200.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button layoutX="1103.0" layoutY="9.0" mnemonicParsing="false" onAction="#cerrarAplicacion" prefHeight="30.0" prefWidth="42.0" styleClass="boton" text="X" visible="false">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <styleClass>
+                        <String fx:value="color-principal" />
+                        <String fx:value="encabezado" />
+                     </styleClass>
+                  </Pane>
+                  <Label layoutX="14.0" layoutY="58.0" text="Menu" AnchorPane.topAnchor="50.0">
+                     <graphic>
+                        <MaterialDesignIconView glyphName="VIEW_HEADLINE" size="55" />
+                     </graphic>
+                     <font>
+                        <Font name="Roboto Medium Italic" size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="200.0" prefWidth="258.0" BorderPane.alignment="CENTER">
+               <styleClass>
+                  <String fx:value="color-principal" />
+                  <String fx:value="menu" />
+               </styleClass>
+               <children>
+                  <VBox layoutX="109.0" layoutY="29.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button fx:id="btnInicio" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="45.0" prefWidth="241.0" styleClass="buttonAmd" text=" Inicio">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <FontAwesomeIconView fx:id="casaIco" fill="WHITE" glyphName="HOME" size="32" wrappingWidth="26.0" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnReservaciones" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="45.0" prefWidth="241.0" styleClass="buttonAmd" text=" Reservaciones">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <FontAwesomeIconView fx:id="resIco" fill="WHITE" glyphName="FILE" size="24" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnServicios" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="45.0" prefWidth="241.0" styleClass="buttonAmd" text=" Servicios" visible="false">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <FontAwesomeIconView fx:id="habIco" fill="WHITE" glyphName="BOOK" size="26" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnCerrarSesion" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#cerrarAplicacion" prefHeight="45.0" prefWidth="241.0" styleClass="buttonAmd" text=" Cerrar sesión">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <MaterialDesignIconView fx:id="cerrarsesIco" fill="WHITE" glyphName="LOGOUT" size="24" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane fx:id="inicioPane" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="115.0" text="Bienvenido al Sistema FX-47">
+                           <font>
+                              <Font name="System Bold Italic" size="50.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="reservacionesPane" layoutY="157.0" prefHeight="415.0" prefWidth="200.0" style="-fx-background-color: white;" visible="false" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER" layoutY="7.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <ScrollPane prefHeight="415.0" prefWidth="870.0" style="-fx-border-color: black;">
+                                 <content>
+                                    <GridPane fx:id="gridReservacion">
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                 </content>
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </HBox.margin>
+                              </ScrollPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <Pane fx:id="tituloPane" layoutX="14.0" layoutY="24.0" prefHeight="88.0" prefWidth="870.0" style="-fx-border-radius: 10; -fx-background-radius: 10;" styleClass="color-principal" AnchorPane.topAnchor="14.0">
+                     <children>
+                        <Label fx:id="titulo" layoutX="352.0" layoutY="23.0" text="Inicio" textFill="WHITE">
+                           <font>
+                              <Font name="Roboto Bold Italic" size="34.0" />
+                           </font>
+                        </Label>
+                        <FontAwesomeIconView fx:id="iconoTitulo" fill="WHITE" layoutX="281.0" layoutY="60.0" size="48" visible="false" />
+                     </children>
+                  </Pane>
+                  <TextField fx:id="buscador" layoutX="14.0" layoutY="110.0" prefHeight="25.0" prefWidth="191.0" promptText="Buscar por ID..." styleClass="adm-textfield">
+                     <font>
+                        <Font name="Roboto Italic" size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+   <styleClass>
+      <String fx:value="shadow" />
+      <String fx:value="main" />
+   </styleClass>
+</AnchorPane>

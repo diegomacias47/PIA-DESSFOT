@@ -1,0 +1,144 @@
+.background
+{
+	-fx-background-color: rgb(240,240,240);	
+
+}
+
+.menu
+{
+	-fx-background-radius: 4;
+	-fx-background-color:#62abf4;   /* #38002a; #62abf4  */	
+	-fx-border-color: white;
+}
+
+.panelMenu
+{
+	-fx-background-radius: 4;
+	-fx-background-color: #003c7c;   /* #38002a; #62abf4  */	
+	-fx-border-color: white;
+}
+
+.seccion2
+{
+	
+	-fx-background-color: rgb(240,240,240);	
+	-fx-border-color: #83bcf7;
+}
+
+.seccion1
+{
+	-fx-border-color: #83bcf7;
+	-fx-background-color: rgb(240,240,240);	
+}
+
+
+
+
+.boton
+{
+	/*-fx-background-color: #527aa3;*/
+	/*-fx-background-color:#38002a;*/
+	-fx-background-color: #62abf4; 
+	-fx-text-fill: white;
+	-fx-border-color: rgb(250,250,250);
+	-fx-background-radius: 6;
+	-fx-border-radius: 6;
+	-fx-font-family: 'Lucida Sans';
+	-fx-font-size: 14;
+	
+	
+}
+
+.botonMenu
+{
+	-fx-background-color:white ; 
+	-fx-text-fill:#62abf4;
+	-fx-border-color: rgb(250,250,250);
+	-fx-background-radius: 40;
+	-fx-border-radius: 40;
+	-fx-font-family: 'Lucida Sans';
+	-fx-font-size: 14;
+}
+
+.botonMenu:hover
+{
+	-fx-background-color: rgb(225,225,225); 
+
+}
+
+.imagen
+{
+	-fx-border-color: rgb(250,250,250);
+	-fx-border-radius: 40;
+	
+}
+
+.boton:hover
+{
+	-fx-background-color: #83bcf7;
+	
+}
+
+.tabs
+{
+	-fx-background-color: rgb(240,240,240);	
+	-fx-text-fill: white;
+	-fx-font-size: 18;
+	-fx-font-family: 'Lucida Sans';
+	
+}
+
+.tab {
+    -fx-background-color:#62abf4;
+    
+}
+
+.tab-label {
+    -fx-text-fill: white;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+     -fx-background-color:rgb(200,200,200);
+}
+
+.tab:selected {
+    -fx-background-color: #8ab8f0;
+}
+
+
+
+.tituloForm
+{
+	-fx-font-size: 24;
+	-fx-background-color: #62abf4; 
+	-fx-border-radius: 4;
+	-fx-border-color: white;
+	-fx-background-radius: 4;
+	-fx-text-fill: white;
+}
+
+.botonesRadio
+{
+	-fx-font-size: 14;
+}
+
+.etiquetas
+{
+	-fx-font-family: 'Lucida Sans';	
+	-fx-font-size: 18;
+}
+
+.cajaTexto
+{
+	-fx-font-family: 'Leelawadee';
+	-fx-font-size: 16;
+	-fx-border-style: none;
+	-fx-border-color: #83bcf7;
+	-fx-border-radius: 4;
+}
+
+.cajaTexto:hover
+{
+	-fx-background-color: rgb(240,240,240);
+	
+}

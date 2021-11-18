@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="180.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ItemController">
+   <children>
+      <VBox alignment="CENTER" layoutX="-11.0" layoutY="-59.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="47.0" prefWidth="240.0">
+               <children>
+                  <Label prefHeight="24.0" prefWidth="121.0" text="Reservacion No.">
+                     <font>
+                        <Font name="Cambria Bold" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" top="2.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="idReserva" prefHeight="24.0" prefWidth="22.0" text="ID">
+                     <font>
+                        <Font name="Cambria Italic" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" top="2.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
+            </HBox>
+            <ImageView fx:id="idImagen" fitHeight="204.0" fitWidth="152.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/nbd.jpg" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="2.0" />
+               </VBox.margin>
+            </ImageView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

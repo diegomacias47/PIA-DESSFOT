@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="441.0" prefWidth="438.0" styleClass="main" stylesheets="@Scene3AddRes.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="controlador.añadirResController">
+   <children>
+      <VBox layoutX="112.0" layoutY="264.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="45.0" prefWidth="387.0" styleClass="vbox-cen-hbox-titulo">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <children>
+                  <Label text="Añadir reservacion" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="34.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Pane prefHeight="445.0" prefWidth="428.0">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" top="15.0" />
+               </VBox.margin>
+               <children>
+                  <Label layoutX="14.0" layoutY="75.0" text="Nombre del cliente:" textAlignment="RIGHT">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="112.0" prefHeight="27.0" prefWidth="191.0" text="Celular del cliente:" textAlignment="RIGHT">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" layoutY="7.0" prefHeight="49.0" prefWidth="428.0" styleClass="vbox-cen-hbox-titulo">
+                     <children>
+                        <Label text="Datos del cliente" textFill="WHITE">
+                           <font>
+                              <Font name="Cambria Bold Italic" size="22.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label alignment="CENTER_RIGHT" layoutX="79.0" layoutY="265.0" prefHeight="27.0" prefWidth="118.0" text="Habitacion:">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="habitacion" layoutX="214.0" layoutY="264.0" prefHeight="27.0" prefWidth="207.0" promptText="Habitacion..." styleClass="combobox" />
+                  <TextField fx:id="nombre" layoutX="214.0" layoutY="76.0" prefHeight="25.0" prefWidth="207.0" promptText="Nombre del cliente...">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="celular" layoutX="214.0" layoutY="110.0" prefHeight="25.0" prefWidth="207.0" promptText="Celular del cliente...">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="16.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="14.0" layoutY="229.0" text="Dias de hospedaje:">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" layoutY="158.0" prefHeight="49.0" prefWidth="428.0" styleClass="vbox-cen-hbox-titulo">
+                     <children>
+                        <Label text="Datos de la reservación" textFill="WHITE">
+                           <font>
+                              <Font name="Cambria Bold Italic" size="22.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <TextField fx:id="dias" layoutX="214.0" layoutY="230.0" prefHeight="25.0" prefWidth="207.0" promptText="Celular del cliente...">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="16.0" />
+                     </font>
+                  </TextField>
+                  <FontAwesomeIconView fx:id="infomracion" glyphName="INFO_CIRCLE" layoutX="53.0" layoutY="284.0" size="22" />
+                  <Button fx:id="agregar" layoutX="14.0" layoutY="317.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="207.0" styleClass="boton" text="Agregar reservacion">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

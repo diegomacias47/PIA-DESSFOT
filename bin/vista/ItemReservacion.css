@@ -1,0 +1,64 @@
+
+
+.main
+{
+	
+	-fx-background-radius: 40;
+	-fx-border-radius: 40;
+	-fx-background-color: rgb(240,240,240);	
+	-fx-border-color: white;
+	-fx-effect: dropShadow(three-pass-box, rgba(0,0,0,.35), 10.0, 0.0, 0.0, 10.0);
+		
+}
+
+.hbox-principal
+{
+	-fx-border-width: 0 0 1 0;
+	-fx-border-color:white;
+	
+	
+}
+
+.labelId
+{
+	-fx-font-family: Leelawadee UI;
+	-fx-text-fill: white;
+	-fx-font-size: 22;
+	-fx-font-weight: bold;
+	
+}
+
+.labelDato
+{
+	-fx-font-family: Cambria;
+	-fx-text-fill: #e0d8d8;
+	-fx-font-size: 22;
+	
+	
+}
+
+.panel
+{
+	-fx-border-color: linear-gradient(#FFE699, #FEF9EF);
+	
+}
+
+
+.boton
+{
+	-fx-background-radius: 10;
+	-fx-border-radius: 10;
+	
+	-fx-background-color: linear-gradient(#0098FF, #A2D2FF);
+	-fx-text-fill: white;
+	-fx-background-color: #1D2023;
+	
+
+	-fx-padding: 0.7em 0.57em;
+    -fx-font-size: 14px;
+    -jfx-button-type: RAISED;
+   	/*-fx-background-color: linear-gradient(#0098FF, #A2D2FF);*/
+    -fx-pref-width: 200;
+    /*-fx-text-fill: WHITE;*/
+	
+}

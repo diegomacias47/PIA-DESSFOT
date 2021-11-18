@@ -1,0 +1,181 @@
+.qlq
+{
+	-fx-border-color: red;
+	
+}
+
+.main
+{
+	-fx-border-color: green;
+	
+}
+
+.transparente
+{
+	-fx-background-color: rgba(0,0,0,0);
+	
+}
+
+.shadow
+{
+	-fx-effect: dropShadow(three-pass-box, rgba(0,0,0,.35), 10.0, 0.0, 0.0, 10.0);
+	
+}
+
+.shadow-lados
+{
+	-fx-effect: dropShadow(three-pass-box, rgba(0,0,0,.35), 0.0, 10.0, 10.0, 0.0);
+}
+
+.hbox-label
+{
+	-fx-effect: dropShadow(three-pass-box, rgba(0,0,0,.35), 10.0, 0.0, 0.0, 10.0);
+	
+}
+
+.hbox-label:hover
+{
+	-fx-text-fill: black;
+	-fx-icon-color: black;
+	-fx-fill: black;
+	
+}
+
+.hbox-label:hover .glyph-icon
+{
+	-fx-text-fill: black;
+	-fx-icon-color: black;
+	
+}
+
+.hbox-normal
+{
+
+}
+
+.hbox-normal:hover
+{
+
+}
+
+
+
+.vbox-izq
+{
+	-fx-background-color: linear-gradient(#0098FF, #79BCFC); /*A2D2FF*/
+	-fx-border-width: 1 1 1 1; 
+	-fx-border-color: white;
+	
+}
+
+.vbox-izq .button
+{
+	-fx-background-color: linear-gradient(#F0F1F1, #D8DDE5);
+	
+	-fx-background-radius: 20;
+	-fx-border-radius:20;
+/*	-fx-effect: dropShadow(three-pass-box, rgba(0,0,0,.35), 10.0, 0.0, 0.0, 10.0);*/
+	-fx-border-color: white;
+}
+
+/*.vbox-izq .button:hover
+{
+	-fx-background-color: linear-gradient(#F0F1F1, #BABABA);
+	-fx-effect: dropShadow(three-pass-box, rgba(0,0,0,.5), 10.0, 0.0, 0.0, 10.0);
+	
+}*/
+
+.vbox-izq-hbox-titulo
+{
+	-fx-background-color: linear-gradient(#F0F1F1, #D8DDE5);	
+	-fx-background-radius: 20;
+	-fx-border-radius:20;
+	-fx-effect: dropShadow(three-pass-box, rgba(0,0,0,.35), 10.0, 0.0, 0.0, 10.0);
+	-fx-border-color: white;
+}
+
+.vbox-cen
+{
+	
+	-fx-background-color: linear-gradient(#FBE0C4, #FFEDDA);
+	/*-fx-background-color: white;*/	
+	-fx-border-width: 1 1 1 0; 
+	-fx-border-color: white;
+}
+
+
+.vbox-cen-hbox-titulo
+{
+	
+	-fx-background-color: linear-gradient(#0098FF, #A2D2FF);
+	
+	-fx-background-radius: 20;
+	-fx-border-radius:20;
+	-fx-effect: dropShadow(three-pass-box, rgba(0,0,0,.35), 10.0, 0.0, 0.0, 10.0);
+	-fx-border-color: white;
+}
+
+.text-field
+{
+	/*-fx-background-color: linear-gradient(#0098FF, #A2D2FF);*/
+	-fx-background-color: linear-gradient(#CAE3FA, #B8D6F3);
+	-fx-background-radius: 20;
+	-fx-border-radius:20;
+	-fx-effect: dropShadow(three-pass-box, rgba(0,0,0,.35), 10.0, 0.0, 0.0, 10.0);
+	-fx-border-color: white;
+	-fx-prompt-text-fill: black;
+	-fx-text-fill: black;
+}
+
+
+.scrollpanecolor
+{
+	-fx-background-color: black;
+	-fx-border-color: gray;
+		
+	
+}
+
+
+
+.scroll-bar:horizontal .increment-button ,
+.scroll-bar:horizontal .decrement-button {
+    -fx-background-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-padding :0.0 0.0 10.0 0.0;
+
+}
+
+.scroll-bar:vertical .increment-button ,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-padding :0.0 10.0 0.0 0.0;
+
+}
+
+ .scroll-bar .increment-arrow,
+ .scroll-bar .decrement-arrow{
+    -fx-shape : " ";    
+    -fx-padding :0.15em 0.0;
+}
+
+ .scroll-bar:vertical .increment-arrow,
+ .scroll-bar:vertical .decrement-arrow{
+    -fx-shape : " ";    
+    -fx-padding :0.0 0.15em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color :derive(black,90.0%);
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 2.0em;
+}
+
+.scroll-bar:horizontal .thumb:hover,
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color :derive(#4D4C4F,10.0%);
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 2.0em;
+}

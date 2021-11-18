@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" styleClass="shadow" stylesheets="@Scene3.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ReservistaController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="768.0" prefWidth="280.0" styleClass="vbox-izq" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="250.0" styleClass="vbox-izq-hbox-titulo">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="100.0" prefWidth="273.0" text=" Panel de control">
+                           <font>
+                              <Font name="Cambria Bold Italic" size="26.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="GEARS" size="26.0" />
+                           </graphic>
+                           <padding>
+                              <Insets left="8.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <ImageView fitHeight="171.0" fitWidth="211.0" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets left="50.0" right="10.0" top="15.0" />
+                     </VBox.margin>
+                     <image>
+                        <Image url="@../img/manager.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnAñadirReservacion" mnemonicParsing="false" onAction="#agregarReservacion" prefHeight="70.0" prefWidth="280.0" text="  Añadir reservacion">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Cambria Bold Italic" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="-5.0" />
+                     </padding>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="FILE_TEXT_ALT" size="22.0" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnServicio" mnemonicParsing="false" prefHeight="70.0" prefWidth="280.0" text=" Ver servicios">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Cambria Bold Italic" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="-65.0" />
+                     </padding>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="CLIPBOARD" size="22" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnCerrarSesion" mnemonicParsing="false" prefHeight="70.0" prefWidth="280.0" text=" Cerrar sesión">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="22.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="-55.0" />
+                     </padding>
+                     <graphic>
+                        <MaterialDesignIconView glyphName="LOGOUT" size="24" />
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" styleClass="vbox-cen" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="724.0" styleClass="vbox-cen-hbox-titulo">
+                     <children>
+                        <Label text="Reservaciones" textFill="WHITE">
+                           <font>
+                              <Font name="Cambria Bold Italic" size="26.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="68.0" prefWidth="704.0">
+                     <children>
+                        <TextField fx:id="buscador" focusTraversable="false" onKeyReleased="#mostrarPorId" prefHeight="45.0" prefWidth="317.0" promptText="Buscar por ID de reservacion o ID de cliente">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Cambria Bold Italic" size="14.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="696.0" styleClass="transparente" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ScrollPane fx:id="scroll" prefHeight="578.0" prefWidth="730.0" styleClass="scrollpanecolor">
+                           <content>
+                              <GridPane fx:id="grid" prefHeight="0.0" prefWidth="0.0">
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                                 </rowConstraints>
+                                 <padding>
+                                    <Insets right="12.0" />
+                                 </padding>
+                              </GridPane>
+                           </content>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </ScrollPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

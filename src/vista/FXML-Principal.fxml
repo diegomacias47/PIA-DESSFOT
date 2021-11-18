@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="apP" prefHeight="680.0" prefWidth="1158.0" style="-fx-border-color: white;" styleClass="shadow" stylesheets="@Administrador.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControllerFXML1">
+   <children>
+      <BorderPane layoutX="552.0" layoutY="221.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane fx:id="slider" prefHeight="580.0" prefWidth="250.0" styleClass="panel-color-menu" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="TOP_CENTER" layoutX="25.0" layoutY="14.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button fx:id="inicio" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#mostrarSeccionInicio" prefHeight="60.0" prefWidth="278.0" styleClass="buttonAmd" text=" Inicio">
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <FontAwesomeIconView fx:id="casaIco" fill="WHITE" glyphName="HOME" size="32" wrappingWidth="26.0" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="empleados" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#mostrarSeccionEmpleados" prefHeight="60.0" prefWidth="271.0" styleClass="buttonAmd" text=" Empleados">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <FontAwesomeIconView fx:id="empIco" fill="WHITE" glyphName="USERS" size="24" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="habitaciones" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#mostrarSeccionHabitacion" prefHeight="60.0" prefWidth="271.0" styleClass="buttonAmd" text=" Habitaciones">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <FontAwesomeIconView fx:id="habIco" fill="WHITE" glyphName="HOTEL" size="24" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="reservaciones" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#mostrarSeccionReservacion" prefHeight="60.0" prefWidth="271.0" styleClass="buttonAmd" text=" Reservaciones">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <FontAwesomeIconView fx:id="resIco" fill="WHITE" glyphName="FILE" size="24" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="facturas" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#mostrarSeccionFactura" prefHeight="60.0" prefWidth="271.0" styleClass="buttonAmd" text="  Facturas">
+                           <graphic>
+                              <FontAwesomeIconView fx:id="facIco" fill="WHITE" glyphName="DOLLAR" size="24" wrappingWidth="17.714285850524902" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="cerrarSesion" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="60.0" prefWidth="271.0" styleClass="buttonAmd" text=" Cerrar sesion">
+                           <graphic>
+                              <MaterialDesignIconView fx:id="cerrarsesIco" fill="WHITE" glyphName="LOGOUT" size="24" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+         <top>
+            <AnchorPane prefHeight="100.0" prefWidth="1158.0" styleClass="panel-color-medio" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="326.0" layoutY="1.0" prefHeight="40.0" prefWidth="1158.0" styleClass="panel-color" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <HBox alignment="CENTER" layoutX="248.0" layoutY="40.0" prefHeight="68.0" prefWidth="908.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="248.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+                     <children>
+                        <Button fx:id="btnPrimero" alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="271.0" styleClass="buttonAmdSup" text="Button" visible="false">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <OctIconView fx:id="plus" glyphName="PLUS" size="20" visible="false" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnSegundo" alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="270.0" styleClass="buttonAmdSup" text="Button" visible="false">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnTercero" alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="271.0" styleClass="buttonAmdSup" text="Button" visible="false">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Label fx:id="menu" layoutX="14.0" layoutY="50.0" prefHeight="56.0" prefWidth="130.0" styleClass="label-menu" text="Menu">
+                     <graphic>
+                        <MaterialDesignIconView glyphName="VIEW_HEADLINE" size="55" wrappingWidth="60.0" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="menuBack" layoutX="14.0" layoutY="50.0" prefHeight="56.0" prefWidth="130.0" styleClass="label-menu" text="Menu">
+                     <graphic>
+                        <MaterialDesignIconView glyphName="VIEW_HEADLINE" size="55" wrappingWidth="60.0" />
+                     </graphic>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane fx:id="inicioPane" prefHeight="519.0" prefWidth="791.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label layoutX="31.0" layoutY="118.0" text="Bienvenido al Sistema FX-47">
+                           <font>
+                              <Font name="System Bold Italic" size="50.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="empleadosPane" layoutY="157.0" prefHeight="415.0" prefWidth="909.0" style="-fx-background-color: white;" visible="false">
+                     <children>
+                        <VBox layoutX="278.0" layoutY="132.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="572.0" prefWidth="909.0">
+                                 <children>
+                                    <ScrollPane prefHeight="572.0" prefWidth="870.0" style="-fx-border-color: black;">
+                                       <content>
+                                          <GridPane fx:id="gridEmpleado">
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </HBox.margin>
+                                    </ScrollPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="habitacionesPane" layoutY="157.0" prefHeight="415.0" prefWidth="909.0" style="-fx-background-color: white;" visible="false">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="572.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="572.0" prefWidth="870.0" style="-fx-border-color: black;">
+                                       <content>
+                                          <GridPane fx:id="gridHabitaciones">
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </HBox.margin>
+                                    </ScrollPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
+                  <AnchorPane fx:id="reservacionesPane" layoutY="157.0" prefHeight="415.0" prefWidth="909.0" style="-fx-background-color: white;" visible="false">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="572.0" prefWidth="909.0">
+                                 <children>
+                                    <ScrollPane prefHeight="572.0" prefWidth="870.0" style="-fx-border-color: black;">
+                                       <content>
+                                          <GridPane fx:id="gridReservaciones">
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </HBox.margin>
+                                    </ScrollPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="facturasPane" layoutY="157.0" prefHeight="415.0" prefWidth="909.0" style="-fx-background-color: white;" visible="false">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="415.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="200.0" prefWidth="870.0" style="-fx-border-color: black;">
+                                       <content>
+                                          <GridPane fx:id="gridFacturas" style="-fx-background-color: rgb(225,225,225);">
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </HBox.margin>
+                                    </ScrollPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <Pane fx:id="tituloPane" layoutX="20.0" layoutY="14.0" prefHeight="88.0" prefWidth="870.0" styleClass="adm-item-vbox" AnchorPane.topAnchor="14.0">
+                     <children>
+                        <Label fx:id="titulo" layoutX="352.0" layoutY="23.0" text="Inicio" textFill="WHITE">
+                           <font>
+                              <Font name="Roboto Bold Italic" size="34.0" />
+                           </font>
+                        </Label>
+                        <FontAwesomeIconView fx:id="iconoTitulo" fill="WHITE" layoutX="281.0" layoutY="60.0" size="48" visible="false" />
+                     </children>
+                  </Pane>
+                  <TextField fx:id="buscador" layoutX="20.0" layoutY="110.0" prefHeight="34.0" prefWidth="241.0" promptText="Buscar por id, nombre o puesto" styleClass="adm-textfield" visible="false">
+                     <font>
+                        <Font name="Roboto Italic" size="16.0" />
+                     </font></TextField>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

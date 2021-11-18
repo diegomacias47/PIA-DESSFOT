@@ -1,0 +1,66 @@
+
+.main{
+	/*-fx-background-radius: 8;
+	-fx-border-radius: 8;*/
+	-fx-background-color: rgb(235,235,235);
+	-fx-border-color: rgb(80,80,80);
+	
+}
+
+.color-oscuro
+{
+	-fx-background-color: #1D2023;
+	-fx-background-color: rgba(30,30,32,1);
+}
+
+
+.color-oscuro2
+{
+
+	-fx-background-color: rgba(30,30,32,.80);
+}
+
+.bordes-10
+{
+	-fx-background-radius: 10;
+	-fx-border-radius: 10;
+}
+
+.boton-g
+{
+	-fx-background-color: #1D2023;
+	-fx-text-fill:white;
+}
+
+.boton-g:hover
+{
+	-fx-background-color: #3A3F44;
+}
+
+.amd-grid-gear
+{
+	
+}
+
+.amd-grid-gear:hover
+{
+	-fx-fill: rgb(180,180,180);
+}
+
+.shadow
+{
+	-fx-effect: dropShadow(three-pass-box, rgba(0,0,0,.35), 10.0, 0.0, 0.0, 10.0);
+	
+}
+
+/*		FXML-H-Item    		*/
+
+
+.FXML-H-Item-Boton
+{
+	-fx-background-color: #1D2023;
+	-fx-text-fill:white;
+}
+
+
+

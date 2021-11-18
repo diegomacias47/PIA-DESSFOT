@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="padre" focusTraversable="true" prefHeight="770.0" prefWidth="500.0" stylesheets="@Items.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControllerRAgregar">
+   <children>
+      <VBox layoutX="-22.0" layoutY="-27.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="55.0" prefWidth="498.0" styleClass="encabezado">
+               <children>
+                  <Button layoutX="432.0" layoutY="7.0" mnemonicParsing="false" onAction="#cerrarVentana" prefHeight="38.0" prefWidth="52.0" styleClass="res-agregar-boton-2" text="X" />
+               </children></Pane>
+            <Pane prefHeight="208.0" prefWidth="468.0">
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" />
+               </VBox.margin>
+               <children>
+                  <Label layoutX="20.0" layoutY="60.0" text="Nombre del cliente:">
+                     <font>
+                        <Font name="Cambria Bold" size="20.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="0.7857142857142857" endY="0.5523809523809524" startX="0.7857142857142857" startY="0.24285714285714288">
+                           <stops>
+                              <Stop color="#5b5757" />
+                              <Stop color="BLACK" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="140.0" text="Celular del cliente:">
+                     <font>
+                        <Font name="Cambria Bold" size="20.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.4142857142857143" startX="1.0" startY="0.2047619047619048">
+                           <stops>
+                              <Stop color="#5b5757" />
+                              <Stop color="BLACK" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill></Label>
+                  <TextField fx:id="nombre" layoutX="20.0" layoutY="90.0" prefHeight="34.0" prefWidth="265.0" promptText="Nombre..." styleClass="res-agregar-textfield2" />
+                  <TextField fx:id="celular" layoutX="18.0" layoutY="170.0" prefHeight="25.0" prefWidth="228.0" promptText="Celular..." styleClass="res-agregar-textfield2" />
+                  <Label layoutX="20.0" layoutY="10.0" prefHeight="41.0" prefWidth="265.0" styleClass="cambria-bold-italic" text="Datos del cliente..." textFill="GREY" />
+                  <FontAwesomeIconView glyphName="USER_PLUS" layoutX="340.0" layoutY="79.0" size="80">
+                     <fill>
+                        <LinearGradient endX="0.6904761904761905" endY="1.0" startX="0.6952380952380952" startY="0.8476190476190477">
+                           <stops>
+                              <Stop color="#222222" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </FontAwesomeIconView>
+                  <Separator layoutX="20.0" layoutY="51.0" prefHeight="2.0" prefWidth="265.0" />
+               </children>
+            </Pane>
+            <Pane prefHeight="260.0" prefWidth="468.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+               </VBox.margin>
+               <children>
+                  <Label layoutX="20.0" layoutY="50.0" text="ID de la habitacion:">
+                     <textFill>
+                        <LinearGradient endX="0.3047619047619048" endY="0.12380952380952381" startX="0.26666666666666666" startY="1.0">
+                           <stops>
+                              <Stop color="BLACK" />
+                              <Stop color="BLACK" offset="0.007662835249042145" />
+                              <Stop color="BLACK" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font name="Cambria Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="idHabitacion" layoutX="20.0" layoutY="80.0" prefHeight="31.0" prefWidth="183.0" promptText="Id de la habitacion..." styleClass="res-agregar-textfield2" />
+                  <Label layoutX="20.0" prefHeight="41.0" prefWidth="312.0" styleClass="cambria-bold-italic" text="Datos de la reservacion..." textFill="GREY" />
+                  <TextField fx:id="buscador" layoutX="20.0" layoutY="225.0" prefHeight="27.0" prefWidth="265.0" promptText="Buscar por tipo de habitacion..." styleClass="res-agregar-textfield2" />
+                  <Separator layoutX="20.0" layoutY="40.0" prefHeight="2.0" prefWidth="312.0" />
+                  <Label layoutX="255.0" layoutY="130.0" text="Dias de hospedaje:">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                           <stops>
+                              <Stop color="#434343" />
+                              <Stop color="BLACK" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font name="Cambria Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Spinner fx:id="spinner" layoutX="255.0" layoutY="160.0" prefHeight="34.0" prefWidth="77.0" />
+                  <Label layoutX="20.0" layoutY="130.0" text="Numero de huespedes.">
+                     <textFill>
+                        <LinearGradient endX="0.3047619047619048" endY="0.12380952380952381" startX="0.26666666666666666" startY="1.0">
+                           <stops>
+                              <Stop color="BLACK" />
+                              <Stop color="BLACK" offset="0.007662835249042145" />
+                              <Stop color="BLACK" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font name="Cambria Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="huespedes" layoutX="20.0" layoutY="160.0" promptText="Cantidad de personas..." styleClass="res-agregar-textfield2" />
+                  <FontAwesomeIconView glyphName="FILE_TEXT" layoutX="362.0" layoutY="81.0" size="85">
+                     <fill>
+                        <LinearGradient endX="0.6904761904761905" endY="1.0" startX="0.6952380952380952" startY="0.8476190476190477">
+                           <stops>
+                              <Stop color="#222222" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </FontAwesomeIconView>
+               </children>
+            </Pane>
+            <HBox alignment="CENTER" prefHeight="169.0" prefWidth="468.0">
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" />
+               </VBox.margin>
+               <children>
+                  <TableView fx:id="tabla" fixedCellSize="-2.0" prefHeight="125.0" prefWidth="429.0">
+                    <columns>
+                      <TableColumn fx:id="tipo" prefWidth="75.0" text="Tipo" />
+                      <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+                        <TableColumn fx:id="camas" prefWidth="75.0" text="Camas" />
+                        <TableColumn fx:id="capacidad" prefWidth="75.0" text="Capacidad" />
+                        <TableColumn fx:id="precio" prefWidth="75.0" text="Precio p/n" />
+                        <TableColumn fx:id="estado" prefWidth="75.0" text="Estado" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </HBox>
+            <Pane prefHeight="58.0" prefWidth="468.0">
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" top="5.0" />
+               </VBox.margin>
+               <children>
+                  <Button layoutX="20.0" layoutY="10.0" mnemonicParsing="false" onAction="#registrarReservacion" prefHeight="31.0" prefWidth="200.0" styleClass="res-agregar-boton" text="Crear reservacion" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+   <styleClass>
+      <String fx:value="root" />
+      <String fx:value="shadow" />
+   </styleClass>
+</AnchorPane>
